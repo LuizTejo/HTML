@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preenchendo endereços</title>
+</head>
+<body>
+    <h1><center>Preenchendo endereços</center></h1>
+    <hr/>
+    <form action="http://localhost:3003/end" method="GET">
+        <div>
+            <h3>Preencha o seu endereço</h3>
+            <p>Rua: <input type="text" name="logradouro" placeholder="Logradouro"></p>
+            <p>Número: <input type="number" name="nrend" placeholder="Número"> <input type="checkbox">S/N </p>
+            <p>Bairro: <input type="text" name="bairro" placeholder="Bairro"></p>
+            <p>Cidade: <input type="text" name="cidade" placeholder="Cidade"></p>
+            <p>UF: <select name="estado">
+                <option value="pb">Paraíba</option>
+                <option value="ba">Bahia</option>
+                <option value="al">Alagoas</option>
+                <option value="ce">Ceará</option>
+                <option value="ma">Maranhão</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="se">Sergipe</option>
+            </select></p>   
+        </div>
+        <div>
+            <input type="checkbox"> O endereço de entrega é o mesmo de cobrança.
+            <br/>
+            <button type="reset">Limpar dados</button>
+            <button type="submit">Incluir Endereço</button>
+        </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me conte mais</title>
+</head>
+<body>
+    <h1>Me conte mais</h1>
+    <h4>Preencha o formulário a seguir e fale um pouco sobre sua experiencia</h4>
+    <hr/>
+    <form action="http://localhost:3003/loja" autocomplete="on" method="GET">
+        <div>
+            <p>Nome:</p>
+            <input type="text" name="nome" placeholder="Digite seu nome...">
+            <p>Data de Nascimento:</p>
+            <input type="date">
+            <p>Sexo:</p>
+            <input type="radio" name="sexo" id ="masc"> Masculino
+            <input type="radio" name="sexo" id = "fem"> Feminino
+            <br/>
+            <br/>
+        </div>
+        <div>
+            <h4>Selecione uma das nossas linhas de produto e descreva sobre sua experiencia</h4>
+            <label for="categoria"></label>
+            <br/>
+            <select name="categoria" id="categ">
+                <option value="barra">Barras de Chocolate</option>
+                <option value="chiclete">Chicletes</option>
+                <option value="pirulito">Pirulito</option>
+            </select>
+            <br/>
+            <textarea name="exp" id="experiencia" cols="30" rows="10">Conte aqui a sua experiencia...</textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Redefinir</button>
+        </div>
+        </form>
+</body>
+</html>
